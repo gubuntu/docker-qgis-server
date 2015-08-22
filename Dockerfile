@@ -20,7 +20,7 @@ RUN echo "deb-src http://qgis.org/ubuntugis-ltr trusty main" >> /etc/apt/sources
 
 RUN apt-get -y update
 
-RUN apt-get install -y qgis-mapserver apache2 libapache2-mod-fcgid
+RUN apt-get install -y qgis-server apache2 libapache2-mod-fcgid
 RUN apt-get purge
 
 EXPOSE 80
