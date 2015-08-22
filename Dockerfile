@@ -10,7 +10,7 @@ ADD 71-apt-cacher-ng /etc/apt/apt.conf.d/71-apt-cacher-ng
 
 
 #-------------Application Specific Stuff ----------------------------------------------------
-apt-key adv --keyserver keyserver.ubuntu.com --recv-key 3FF5FFCAD71472C4
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 3FF5FFCAD71472C4
 
 RUN echo "deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu trusty main" >> /etc/apt/sources.list
 RUN echo "deb     http://qgis.org/ubuntugis-ltr trusty main" >> /etc/apt/sources.list
